@@ -5,11 +5,11 @@ if (!process.env.PORT) {
 
 const express = require('express');
 const path = require('path');
-const favicon = require('serve-favicon');
-const logger = require('morgan');
-const cookieParser = require('cookie-parser');
-const bodyParser = require('body-parser');
-const methodOverride = require('method-override')
+const favicon = require('serve-favicon'); //serves favicons 
+const logger = require('morgan'); //HTTP request logger
+const cookieParser = require('cookie-parser'); //Parse Cookie header and populate req.cookies with an object keyed by the cookie names
+const bodyParser = require('body-parser'); //Parse incoming request bodies in a middleware before your handlers, available under the req.body property
+const methodOverride = require('method-override') //Lets you use HTTP verbs such as PUT or DELETE in places where the client doesn't support it.
 
 const app = express();
 
