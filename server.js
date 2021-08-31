@@ -13,7 +13,7 @@ const methodOverride = require('method-override') //Lets you use HTTP verbs such
 
 const app = express();
 
-const mongoose = require('mongoose');
+const mongoose = require('mongoose'); //Object Data modeling library for MongoDB
 mongoose.connect('mongodb://localhost/local', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
